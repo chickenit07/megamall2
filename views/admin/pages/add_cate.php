@@ -1,0 +1,29 @@
+<div class="col-lg-7" style="padding-bottom:120px">
+ <form action="../routes/admin/add_cate.php" method="POST">
+    <div class="form-group">
+        <label>Category Parent</label>
+        <select class="form-control" name="sltParent">
+            <option value="0">It's parent category</option>
+            <?php cate_parent($cate_parent); ?>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Category Name</label>
+        <input class="form-control" name="txtCateName" placeholder="Please Enter Category Name" required/>
+    </div>
+    <div class="form-group">
+        <label>Category Order</label>
+        <input type="number"  class="form-control" name="txtOrder" placeholder="Please Enter Category Order" required/>
+    </div>
+    <div class="form-group">
+        <label>Category Keywords</label>
+        <input class="form-control" name="txtKeywords" placeholder="Please Enter Category Keywords" required/>
+    </div>
+    <div class="form-group">
+        <label>Category Description</label>
+        <textarea class="form-control" rows="3" name="txtDescription"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Category Add</button>
+    <button type="reset" class="btn btn-default">Reset</button>
+<form>
+</div>
