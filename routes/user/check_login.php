@@ -6,7 +6,7 @@ if ($login) {
 	header("Location: ../../index.php");
 } else {
 	session_start();
-	$_SESSION['errors'] = array('Please try another one!');
+	$_SESSION['errors'] = array('Wrong login information, please try again!');
 	header("Location: ../../login.php");
 }
 ?>
